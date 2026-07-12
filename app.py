@@ -14,7 +14,7 @@ MODEL_DIR = "predictions"        # Saved XGBoost models
 COMPANIES = [f.replace("_features.csv", "") for f in os.listdir(DATA_DIR) if f.endswith("_features.csv")]
 NEWS_API_KEY = "c09d9d4fb6394b76a3f64e17255348d9"
 
-st.set_page_config(page_title="Stock Price Predictor", layout="wide")
+st.set_page_config(page_title="Fincast - Stock Price Predictor", layout="wide")
 st.title("📈 Fincast")
 st.subheader("Forecasting finance, empowering decisions.")
             
@@ -127,7 +127,7 @@ if show_news:
 st.markdown("""
 ---
 <div style='text-align: center;'>
-    <p>🚀 Made with ❤️ by <b>Mantra Gupta</b></p>
+    <p>🚀 Made with ❤️ by <b>Team Fincast</b></p>
     <p>© No Copyright</p>
     <p>📊 Data Sources: Yahoo Finance, NewsAPI</p>
 </div>
